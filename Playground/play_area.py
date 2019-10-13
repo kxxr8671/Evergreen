@@ -2,7 +2,7 @@ import sys
 
 
 print(sys.version)
-print("version check")
+print("version check 2")
 
 
 class TestClass(object):
