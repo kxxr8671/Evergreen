@@ -68,50 +68,62 @@
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
+</div><!-- /.container -->
 
-    <!-- START THE FEATURETTES -->
+    <div style= "margin: 100px;">
+       <h3 class="text-muted"></h3>
+       <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+       <div class="row featurette">
+         <div class="col-md-7">
+           <h2 class="featurette-heading"><span class="text-muted">Product Sourcing</span></h2>
+           <p class="lead">
+              We source globally for products our clients need to run their businesses.  We select products from trusted suppliers that
+              we have built strong relationships over our years in business.
+           </p>
+         </div>
+         <div class="col-md-5">
+           {% load static %}
+           <img src ="{% static "product_sourcing.jpg" %}" alt="First Slide" width="500" height="500">
+         </div>
+       </div>
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
+       <hr class="featurette-divider">
+
+       <div class="row featurette">
+         <div class="col-md-7 order-md-2">
+           <h2 class="featurette-heading"><span class="text-muted">Product Placement</span></h2>
+           <p class="lead">
+               Our team of professionals assist clients in placing their products in the marketplace. From our retail database, we create
+               opportunities for products to grow.
+           </p>
+         </div>
+         <div class="col-md-5 order-md-1">
+           {% load static %}
+           <img src ="{% static "product_placement.jpg" %}" alt="First Slide" width="500" height="500">
+         </div>
+       </div>
+
+       <hr class="featurette-divider">
+
+       <div class="row featurette">
+         <div class="col-md-7">
+           <h2 class="featurette-heading"> <span class="text-muted"> Market Research</span></h2>
+           <p class="lead">
+             We evaluate sales potential in a market, find new markets for products, establish marketing strategy for a given market, identify competition,
+            determine factors important for potential buyer, identify impediments in target market and understand many crtical market intelligence.
+           </p>
+         </div>
+         <div class="col-md-5">
+           {% load static %}
+          <img src ="{% static "market_intelligence.jpg" %}" alt="First Slide" width="500" height="500">
+         </div>
+       </div>
+
+       <hr class="featurette-divider">
+
+       <!-- /END THE FEATURETTES -->
+
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
 
 {% endblock %}
