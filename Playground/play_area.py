@@ -1,4 +1,5 @@
 import sys
+import datetime
 
 
 print(sys.version)
@@ -12,7 +13,7 @@ class TestClass(object):
         super(TestClass, self).__init__()
 
     def hello_world(self):
-        print("Hello World")
+        print(datetime.datetime.now().year)
 
 
 foo = TestClass()

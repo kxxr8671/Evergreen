@@ -21,15 +21,23 @@ def contact_us(request):
         first_name = request.POST.get(
             'first_name'
         , '')
+        last_name = request.POST.get(
+            'last_name'
+        , '')
         email = request.POST.get(
             'email'
+        , '')
+        phone = request.POST.get(
+            'phone'
         , '')
 
         message = request.POST.get('message', '')
         template = get_template('contact_template.txt')
         context = {
             'first_name': first_name,
+            'last_name': last_name,
             'email': email,
+            'phone':phone,
             'message': message,
         }
         content = template.render(context)
@@ -37,8 +45,8 @@ def contact_us(request):
         email = EmailMessage(
             "New contact form submission",
             content,
-            "Your website" +'',
-            ['youremail@gmail.com'],
+            "Evergreen Tradesource",
+            ['karthikdotnet@gmail.com'],
             headers = {'Reply-To': email }
         )
         email.send()
