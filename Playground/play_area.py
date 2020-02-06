@@ -3,7 +3,7 @@ import datetime
 
 
 print(sys.version)
-print("version check 2")
+print("version check 1")
 
 
 class TestClass(object):
