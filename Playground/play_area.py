@@ -1,11 +1,6 @@
 import sys
 import datetime
 
-
-print(sys.version)
-print("version check 1")
-
-
 class TestClass(object):
     """docstring for TestClass"""
 
@@ -15,6 +10,7 @@ class TestClass(object):
     def hello_world(self):
         print(datetime.datetime.now().year)
 
+    def __str__(self):
+        return f"Running under Python {sys.version}"
 
-foo = TestClass()
-foo.hello_world()
+print(TestClass())
